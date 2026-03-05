@@ -4,7 +4,7 @@ import { SiFacebook, SiInstagram, SiX, SiYoutube } from "react-icons/si";
 const currentYear = new Date().getFullYear();
 
 export default function ContactFooter() {
-  const waLink = "https://wa.me/919XXXXXXXXX";
+  const waLink = "https://wa.me/917987645698";
   const hostname =
     typeof window !== "undefined"
       ? encodeURIComponent(window.location.hostname)
@@ -36,11 +36,11 @@ export default function ContactFooter() {
             {/* Center: Contact info */}
             <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-8">
               <a
-                href="tel:+919XXXXXXXXX"
+                href="tel:+917987645698"
                 className="flex items-center gap-2 text-maroon/80 hover:text-maroon transition-colors font-body text-sm"
               >
                 <Phone size={14} className="text-amber-700" />
-                <span>+91 9XXXXXXXXX</span>
+                <span>+91 79876 45698</span>
               </a>
               <a
                 href="mailto:info@chouhanhandloom.com"
@@ -103,7 +103,11 @@ export default function ContactFooter() {
               {/* Social links */}
               <div className="flex gap-3">
                 {[
-                  { Icon: SiInstagram, href: "#", label: "Instagram" },
+                  {
+                    Icon: SiInstagram,
+                    href: "https://www.instagram.com/chouhan_handloom02?igsh=MXNkMjZmdDZrMHp6eA==",
+                    label: "Instagram",
+                  },
                   { Icon: SiFacebook, href: "#", label: "Facebook" },
                   { Icon: SiX, href: "#", label: "X (Twitter)" },
                   { Icon: SiYoutube, href: "#", label: "YouTube" },
