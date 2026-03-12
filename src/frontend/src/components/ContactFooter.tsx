@@ -1,10 +1,10 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { SiFacebook, SiInstagram, SiX, SiYoutube } from "react-icons/si";
 
 const currentYear = new Date().getFullYear();
 
 export default function ContactFooter() {
-  const waLink = "https://wa.me/917987645698";
+  const waLink = "https://wa.me/918962203433";
   const hostname =
     typeof window !== "undefined"
       ? encodeURIComponent(window.location.hostname)
@@ -36,11 +36,11 @@ export default function ContactFooter() {
             {/* Center: Contact info */}
             <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-8">
               <a
-                href="tel:+917987645698"
+                href="tel:+918962203433"
                 className="flex items-center gap-2 text-maroon/80 hover:text-maroon transition-colors font-body text-sm"
               >
                 <Phone size={14} className="text-amber-700" />
-                <span>+91 79876 45698</span>
+                <span>+91 89622 03433</span>
               </a>
               <a
                 href="mailto:info@veerahandloom.com"
@@ -51,7 +51,13 @@ export default function ContactFooter() {
               </a>
               <div className="flex items-center gap-2 text-maroon/60 font-body text-sm">
                 <MapPin size={14} className="text-amber-700" />
-                <span>Maheshwar, Madhya Pradesh</span>
+                <span>
+                  98, Vinoba Bhave Marg, Near Ahilya Fort, Maheshwar, MP 451228
+                </span>
+              </div>
+              <div className="flex items-center gap-2 text-maroon/60 font-body text-sm font-semibold">
+                <Clock size={14} className="text-amber-700" />
+                <span>BUSINESS HOURS :- 9:00 AM to 8:00 PM ( Open Daily)</span>
               </div>
             </div>
 
@@ -96,26 +102,48 @@ export default function ContactFooter() {
                   }}
                 />
               </div>
-              <p className="text-maroon/60 font-body text-sm leading-relaxed max-w-xs mb-6">
+              <p className="text-maroon/60 font-body text-sm leading-relaxed max-w-xs mb-4">
                 Authentic Maheshwari sarees handcrafted with centuries-old
                 artistry. Preserving India's textile heritage since 1987.
               </p>
+              {/* Address & Hours */}
+              <div className="mb-6 space-y-1">
+                <p className="text-maroon/60 font-body text-xs flex items-start gap-1.5">
+                  <MapPin
+                    size={12}
+                    className="text-amber-700 mt-0.5 flex-shrink-0"
+                  />
+                  98, Vinoba Bhave Marg, Near Ahilya Fort,
+                  <br />
+                  Maheshwar, Madhya Pradesh 451228
+                </p>
+                <p className="text-maroon/60 font-body text-xs flex items-center gap-1.5 font-semibold">
+                  <Clock size={12} className="text-amber-700 flex-shrink-0" />
+                  BUSINESS HOURS :- 9:00 AM to 8:00 PM ( Open Daily)
+                </p>
+              </div>
               {/* Social links */}
               <div className="flex gap-3">
                 {[
                   {
                     Icon: SiInstagram,
-                    href: "https://www.instagram.com/chouhan_handloom02?igsh=MXNkMjZmdDZrMHp6eA==",
+                    href: "https://www.instagram.com/veera_handloom",
                     label: "Instagram",
                   },
                   { Icon: SiFacebook, href: "#", label: "Facebook" },
                   { Icon: SiX, href: "#", label: "X (Twitter)" },
-                  { Icon: SiYoutube, href: "#", label: "YouTube" },
+                  {
+                    Icon: SiYoutube,
+                    href: "https://youtube.com/@maheshwarisari?si=j49sgY1qTcEjwN7x",
+                    label: "YouTube",
+                  },
                 ].map(({ Icon, href, label }) => (
                   <a
                     key={label}
                     href={href}
                     aria-label={label}
+                    target={href !== "#" ? "_blank" : undefined}
+                    rel={href !== "#" ? "noopener noreferrer" : undefined}
                     className="w-9 h-9 rounded-full border border-amber-700/30 flex items-center justify-center text-maroon/50 hover:text-amber-700 hover:border-amber-700 transition-all duration-200"
                   >
                     <Icon size={14} />

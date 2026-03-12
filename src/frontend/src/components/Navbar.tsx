@@ -50,9 +50,10 @@ export default function Navbar() {
             className="flex items-center gap-2 group bg-transparent border-0 p-0"
           >
             <img
-              src="/assets/generated/logo-transparent.dim_400x120.png"
+              src="/assets/generated/logo-transparent.dim_800x240.png"
               alt="Veera Handloom"
-              className="h-10 md:h-12 object-contain"
+              className="h-12 md:h-14 w-auto object-contain"
+              style={{ imageRendering: "auto", maxWidth: "200px" }}
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = "none";
