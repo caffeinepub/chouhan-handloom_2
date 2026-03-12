@@ -17,16 +17,16 @@ const timelineItems = [
   },
   {
     year: "1987",
-    title: "Chouhan Handloom Founded",
+    title: "Veera Handloom Founded",
     description:
-      "Three generations of master weavers established Chouhan Handloom, preserving ancient techniques while embracing contemporary artistry.",
+      "Three generations of master weavers established Veera Handloom, preserving ancient techniques while embracing contemporary artistry.",
     side: "right",
   },
   {
     year: "2024",
     title: "Global Recognition",
     description:
-      "Shipping to 50+ countries worldwide, Chouhan Handloom brings the heritage of Maheshwar to fashion enthusiasts across every continent.",
+      "Shipping to 50+ countries worldwide, Veera Handloom brings the heritage of Maheshwar to fashion enthusiasts across every continent.",
     side: "left",
   },
 ];
@@ -109,10 +109,10 @@ export default function AboutSection() {
                 but stories.
               </p>
               <p>
-                Chouhan Handloom was born from this living tradition. Our master
+                Veera Handloom was born from this living tradition. Our master
                 weavers bring decades of expertise to every creation, ensuring
-                that when you wear a Chouhan saree, you carry with you the
-                spirit of Maheshwar itself.
+                that when you wear a Veera saree, you carry with you the spirit
+                of Maheshwar itself.
               </p>
             </div>
 

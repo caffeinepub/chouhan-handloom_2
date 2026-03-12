@@ -51,7 +51,7 @@ export default function Navbar() {
           >
             <img
               src="/assets/generated/logo-transparent.dim_400x120.png"
-              alt="Chouhan Handloom"
+              alt="Veera Handloom"
               className="h-10 md:h-12 object-contain"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
@@ -61,7 +61,7 @@ export default function Navbar() {
                   const span = document.createElement("span");
                   span.className =
                     "logo-text font-brand font-bold text-lg md:text-xl shimmer-gold-text tracking-wider";
-                  span.textContent = "Chouhan Handloom";
+                  span.textContent = "Veera Handloom";
                   parent.appendChild(span);
                 }
               }}

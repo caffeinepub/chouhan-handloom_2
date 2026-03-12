@@ -43,11 +43,11 @@ export default function ContactFooter() {
                 <span>+91 79876 45698</span>
               </a>
               <a
-                href="mailto:info@chouhanhandloom.com"
+                href="mailto:info@veerahandloom.com"
                 className="flex items-center gap-2 text-maroon/80 hover:text-maroon transition-colors font-body text-sm"
               >
                 <Mail size={14} className="text-amber-700" />
-                <span>info@chouhanhandloom.com</span>
+                <span>info@veerahandloom.com</span>
               </a>
               <div className="flex items-center gap-2 text-maroon/60 font-body text-sm">
                 <MapPin size={14} className="text-amber-700" />
@@ -83,7 +83,7 @@ export default function ContactFooter() {
               <div className="mb-4">
                 <img
                   src="/assets/generated/logo-transparent.dim_400x120.png"
-                  alt="Chouhan Handloom"
+                  alt="Veera Handloom"
                   className="h-10 object-contain"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -91,7 +91,7 @@ export default function ContactFooter() {
                     const span = document.createElement("span");
                     span.className =
                       "font-brand font-bold text-xl shimmer-gold-text tracking-wider";
-                    span.textContent = "Chouhan Handloom";
+                    span.textContent = "Veera Handloom";
                     target.parentElement?.appendChild(span);
                   }}
                 />
@@ -205,7 +205,7 @@ export default function ContactFooter() {
           {/* Bottom bar */}
           <div className="border-t border-amber-700/20 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-maroon/40 font-body text-xs text-center md:text-left">
-              © {currentYear} Chouhan Handloom. All rights reserved.
+              © {currentYear} Veera Handloom. All rights reserved.
             </p>
             <p className="text-maroon/40 font-body text-xs text-center">
               Handcrafted with ❤️ in Maheshwar, India

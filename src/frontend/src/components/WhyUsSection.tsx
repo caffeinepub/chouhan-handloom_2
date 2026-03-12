@@ -222,8 +222,7 @@ export default function WhyUsSection() {
             <div className="h-px w-12 bg-gold/40" />
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-maroon">
-            Why Choose{" "}
-            <span className="shimmer-gold-text">Chouhan Handloom</span>
+            Why Choose <span className="shimmer-gold-text">Veera Handloom</span>
           </h2>
         </div>
 
@@ -288,7 +287,7 @@ export default function WhyUsSection() {
           <div className="flex items-center justify-center gap-4 mt-4">
             <div className="h-px w-16 bg-gold/30" />
             <span className="text-gold/60 text-sm font-body">
-              Chouhan Handloom
+              Veera Handloom
             </span>
             <div className="h-px w-16 bg-gold/30" />
           </div>

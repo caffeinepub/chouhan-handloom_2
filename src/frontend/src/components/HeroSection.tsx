@@ -246,7 +246,7 @@ export default function HeroSection() {
 
             {/* Brand line */}
             <p className="font-display text-xl md:text-2xl text-maroon/80 mb-4 tracking-wide">
-              Chouhan Handloom, Maheshwar
+              Veera Handloom, Maheshwar
             </p>
 
             {/* Body */}
